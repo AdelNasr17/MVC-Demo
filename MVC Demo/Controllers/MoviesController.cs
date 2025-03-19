@@ -49,5 +49,14 @@ namespace MVC_Demo.Controllers
         {
 
         }
+
+
+
+        //BaseURL/Movies/TestModelBinding
+        [HttpGet]
+        public IActionResult TestModelBinding(int id , string name)
+        {
+            return Content($"Hello {name} Your id = {id}");
+        }
     }
 }
